@@ -15,12 +15,12 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: 22 November 2026</p>
+  <p class="muted">Last updated: 25 November 2026</p>
 
   <p>Verse Feed is a Bible reading app made by Peter Chappell ("we", "us"). This policy explains what information the app handles, why, and the choices you have. You never need an account to read.</p>
 
   <h2>Information that stays on your iPhone</h2>
-  <p>Your likes, notes, bookmarks, reading plans, streak, reminders and reading position are stored on your device. If you don't sign in, none of this is sent to us.</p>
+  <p>Your likes, notes, bookmarks, reading plans, streak, reminders, reading position, past Ask the Bible questions and answers, and the answers you give when you first open the app (including the Christian tradition you choose, if any) are stored on your device. If you don't sign in, none of this is sent to us.</p>
 
   <h2>If you sign in</h2>
   <p>Signing in is optional and uses Sign in with Apple. When you sign in we receive an account identifier from Apple and your email address (or the private relay address Apple creates, if you chose to hide your email). We then store the following with your account, so it can be backed up and synced across your devices:</p>
@@ -35,6 +35,19 @@
   <p>When you open a study aid (for example "Explain Easier"), the app sends the verse reference, the verse text and the translation name to our server. Our server asks Anthropic's Claude model to write the study aid. No personal information is sent with the request. Generated study aids are stored and shared with everyone who studies the same verse, so they aren't linked to you.</p>
   <p>Study aids are AI-generated and can contain mistakes. Please check them against Scripture.</p>
 
+  <h2>Ask the Bible</h2>
+  <p>Ask the Bible answers questions you type in your own words. Before your first question the app asks for your agreement, and nothing is sent until you give it. You can withdraw it at any time in Settings with "Send questions to AI".</p>
+  <p>When you ask a question, the app sends our server:</p>
+  <ul>
+    <li>your question, and up to three earlier questions and answers from the same conversation</li>
+    <li>the verse you were asking about, if any</li>
+    <li>the Christian tradition you chose, if you set one, and whether your Bible shows the deuterocanonical books</li>
+    <li>if you subscribe or are signed in, proof of that, so the right usage limit applies</li>
+  </ul>
+  <p>Our server passes the question, the earlier turns, the verse and the tradition to Anthropic, whose Claude model writes the answer. Anthropic does not receive your name, email address or account identifier. Because you write the question yourself, it can contain personal information, including about your beliefs or health, so please don't include anything you wouldn't want processed this way.</p>
+  <p>We don't store your questions or the answers on our servers. They are kept on your iPhone, in Past questions, until you delete them or delete the app. To limit abuse we keep a counter of how many questions were asked from a network address or account. The counter is stored against a scrambled value that we can't turn back into the address, and is deleted after a few days.</p>
+  <p>Answers are AI-generated and can contain mistakes. They are a help for reading Scripture, not a replacement for it or for people you trust. Ask the Bible is not a crisis service: if you are in danger, contact your local emergency number.</p>
+
   <h2>Subscriptions</h2>
   <p>Purchases are made through Apple. We never see your payment details. We use Superwall to show the subscription screen and to know whether your subscription is active. Superwall receives:</p>
   <ul>
@@ -42,9 +55,10 @@
     <li>device and app information (such as device model, iOS version, app version, language and region)</li>
     <li>how you interact with the subscription screen, and your purchase, trial, renewal and cancellation events</li>
     <li>if you are signed in, your email address</li>
-    <li>a few app details used to choose which subscription screen to show (your active reading plan, streak length and onboarding version)</li>
+    <li>app details used to choose which subscription screen to show: your active reading plan, streak length, daily goal, whether the daily reminder is on, and your answers to the first-launch questions about why you are here, how well you know the Bible and which topics you picked</li>
+    <li>a record of things you do in the app, such as finishing a first-launch screen, opening a tab, meeting your daily goal, opening a study aid or asking a question. These records say that something happened, not what you read or asked</li>
   </ul>
-  <p>We use this information to provide subscriptions and to understand and improve how the app and our advertising perform. We do not sell your personal information.</p>
+  <p>Superwall does not receive your questions, your notes or the Christian tradition you chose. We use this information to provide subscriptions and to understand and improve how the app and our advertising perform. We do not sell your personal information.</p>
 
   <h2>Notifications</h2>
   <p>Daily reminders and trial reminders are scheduled on your iPhone. We don't send them from a server.</p>
